@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<web-app xmlns="http://java.sun.com/xml/ns/j2ee"
+  	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation=
+    "http://java.sun.com/xml/ns/j2ee 
+     http://java.sun.com/xml/ns/j2ee/web-app_2_4.xsd" version="2.4">
+    <display-name>Tarea de moddle II</display-name>
+    
+    <description>
+	Tarea con un mvc
+    </description>
+
+    <!-- MIS RUTAS DE APLICACION-->
+    <servlet>
+        <servlet-name>HolaMundo</servlet-name>
+        <servlet-class>tarea2.HolaMundo</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>HolaMundo</servlet-name>
+        <url-pattern>/Hola</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>ServletControlador</servlet-name>
+        <servlet-class>tarea2.ServletControlador</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>ServletControlador</servlet-name>
+        <url-pattern>/ServletControlador</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>ServletContenedor</servlet-name>
+        <servlet-class>tarea2.ServletContenedor</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>ServletContenedor</servlet-name>
+        <url-pattern>/ServletContenedor</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>ServletProcesamientoFinal</servlet-name>
+        <servlet-class>tarea2.ServletProcesamientoFinal</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>ServletProcesamientoFinal</servlet-name>
+        <url-pattern>/ServletProcesamientoFinal</url-pattern>
+    </servlet-mapping>
+        
+    <!--TERMINAN MIS RUTAS DE APLICACION-->
+
+
+    <welcome-file-list>
+	   <welcome-file>index.html</welcome-file>
+    </welcome-file-list>
+    
+    
+    	
+  </web-app> 
